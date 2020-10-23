@@ -1,0 +1,24 @@
+# Salesforce / SFDX / CCI
+.cci
+.sfdx
+/src.orig
+/src
+/mdapioutput
+
+# Python
+*.pyc
+__pycache__
+
+# Robot Framework results
+robot/sfdx-privacy-center-compliance/results/
+
+# Editors
+*.sublime-project
+*.sublime-workspace
+.vscode
+.idea
+.project
+.settings
+
+# Misc
+.DS_Store
