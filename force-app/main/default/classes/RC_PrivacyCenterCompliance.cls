@@ -42,10 +42,7 @@ public class RC_PrivacyCenterCompliance {
                     // check for matching masking policy for compliance fields
                     
                     for (RC_PrivacyField maskedField : maskedFields) {
-                        //System.debug('entityName: ' + entityName + ', maskedField object: ' + maskedField.objectApiName 
-                        //             + ', complianceFieldName: ' + complianceFieldName + ', maskedField: ' + maskedField.fieldApiName);
-                        if ((maskedField.objectApiName == entityName) 
-                            && (maskedField.fieldApiName == complianceFieldName)) {
+                        if (maskedField.fieldApiName == complianceFieldName) {
                             masked = true;
                             reportEntry.Policy_Config__c = maskedField.policyConfigName;
                             reportEntry.Masking_Type__c = maskedField.maskingType;
@@ -116,15 +113,8 @@ public class RC_PrivacyCenterCompliance {
 				System.debug('RC_PrivacyCenterCompliance > getMaskedEntityFieldMap - masking fields: ' + dmFields.size());                
                 
                 // put object and fields in map
-                List<RC_PrivacyField> existing_dmFields = entityFieldMap.get(maskingObject.privacycenter__API_Name__c);
-                if (existing_dmFields == null) {
-                	entityFieldMap.put(maskingObject.privacycenter__API_Name__c, dmFields);
-                } else {
-                    // append dmFields to existing dmFields
-                    dmFields.addall(existing_dmFields);
-                    entityFieldMap.put(maskingObject.privacycenter__API_Name__c, dmFields);
-                }
-            
+                entityFieldMap.put(maskingObject.privacycenter__API_Name__c, dmFields);
+                
                 for (RC_PrivacyField dmField : dmFields) {
                     System.debug('RC_PrivacyCenterCompliance > getMaskedEntityFieldMap >>> masking field: ' + dmField);
                 } 

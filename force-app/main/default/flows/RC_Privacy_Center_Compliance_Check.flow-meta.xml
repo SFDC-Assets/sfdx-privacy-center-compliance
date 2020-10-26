@@ -22,6 +22,7 @@
             <targetReference>Cleared</targetReference>
         </connector>
     </actionCalls>
+    <apiVersion>50.0</apiVersion>
     <choices>
         <name>ClearComplianceReports</name>
         <choiceText>Clear Compliance Reports</choiceText>
