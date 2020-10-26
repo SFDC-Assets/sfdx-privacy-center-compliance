@@ -27,13 +27,7 @@ export default class rc_ConsentEventListener extends LightningElement {
             var newValues = JSON.parse(payload.NewValues);      
                         
             var msg = 'Object: ' + payload.ObjectName + ', ChangeType: ' + payload.ChangeType;
-            console.log('rc_ConsentEventListener >> msg: ', msg);
-
-            const evt = new ShowToastEvent({
-                title: 'Consent Event!',
-                message: msg,
-                variant: 'success',
-            });
+            //console.log('rc_ConsentEventListener >> msg: ', msg);
 
             msg += ', New Values: ';           
             const keys = Object.keys(newValues);
@@ -42,7 +36,13 @@ export default class rc_ConsentEventListener extends LightningElement {
                 msg += `[${key}: ${newValues[key]}]`;
             });
             //lastEventMsg = msg;
-            console.log('rc_ConsentEventListener >> lastEventMsg: ', msg);
+            console.log('rc_ConsentEventListener >> msg: ', msg);
+
+            const evt = new ShowToastEvent({
+                title: 'Consent Event!',
+                message: msg,
+                variant: 'success',
+            });
 
             thisReference.dispatchEvent(evt);
         };
