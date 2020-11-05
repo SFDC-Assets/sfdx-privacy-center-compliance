@@ -1,7 +1,13 @@
 # sfdx-privacy-center-compliance
 
-Add a brief description of this project here, in Markdown format.
-It will be shown on the main page of the project's GitHub repository.
+This is an SFDX project that extends Privacy Center functionality by matching fields with Compliance Categorization to  Privacy Policy configurations to identify fields that may need to be masked when being archived.
+
+![Privacy Center Compliance Dashboard](docs/images/privacy-center-compliance.png)
+
+Also included is a Lightning web component that subscribes to the Platform Event channel '/event/ConsentEvent' to listen for consent-related events such as updates to Individual records.
+
+![Consent Events](docs/images/consent-events.png)
+
 
 ## Development
 
