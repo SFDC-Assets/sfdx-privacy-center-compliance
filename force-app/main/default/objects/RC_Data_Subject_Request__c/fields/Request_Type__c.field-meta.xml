@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Privacy Inquiry</fullName>
+                <default>true</default>
+                <label>Privacy Inquiry</label>
+            </value>
+            <value>
+                <fullName>Correct / Update</fullName>
+                <default>false</default>
+                <label>Correct / Update</label>
+            </value>
+            <value>
+                <fullName>Delete My Data</fullName>
+                <default>false</default>
+                <label>Delete My Data</label>
+            </value>
+            <value>
+                <fullName>Portability</fullName>
+                <default>false</default>
+                <label>Portability</label>
+            </value>
+            <value>
+                <fullName>Stop Processing My Data</fullName>
+                <default>false</default>
+                <label>Stop Processing My Data</label>
+            </value>
+            <value>
+                <fullName>Stop Sending Email</fullName>
+                <default>false</default>
+                <label>Stop Sending Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

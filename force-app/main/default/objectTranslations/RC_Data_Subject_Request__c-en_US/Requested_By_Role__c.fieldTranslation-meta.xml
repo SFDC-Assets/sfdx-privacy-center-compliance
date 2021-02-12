@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Requested By (Role) --></label>
+    <name>Requested_By_Role__c</name>
+    <picklistValues>
+        <masterLabel>Customer / User</masterLabel>
+        <translation><!-- Customer / User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee (Current, Ex, or Contingent Worker)</masterLabel>
+        <translation><!-- Employee (Current, Ex, or Contingent Worker) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Applicant/Candidate</masterLabel>
+        <translation><!-- Job Applicant/Candidate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On behalf of someone / Legal Representative</masterLabel>
+        <translation><!-- On behalf of someone / Legal Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner / Reseller</masterLabel>
+        <translation><!-- Partner / Reseller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier / Vendor</masterLabel>
+        <translation><!-- Supplier / Vendor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

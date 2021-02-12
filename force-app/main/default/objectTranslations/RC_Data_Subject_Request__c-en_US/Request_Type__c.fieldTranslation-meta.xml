@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Request Type --></label>
+    <name>Request_Type__c</name>
+    <picklistValues>
+        <masterLabel>Correct / Update</masterLabel>
+        <translation><!-- Correct / Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delete My Data</masterLabel>
+        <translation><!-- Delete My Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portability</masterLabel>
+        <translation><!-- Portability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Privacy Inquiry</masterLabel>
+        <translation><!-- Privacy Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop Processing My Data</masterLabel>
+        <translation><!-- Stop Processing My Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop Sending Email</masterLabel>
+        <translation><!-- Stop Sending Email --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
